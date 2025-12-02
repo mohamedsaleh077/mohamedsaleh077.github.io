@@ -1,0 +1,100 @@
+@import url('https://fonts.cdnfonts.com/css/w95fa');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: w95fa;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.desktop {
+    background-color: #386ca0;
+    height: 95dvh;
+}
+
+.taskbar {
+    background-color: #D0CCC0;
+    height: 5dvh;
+    box-shadow: inset -2px -2px 0 black,
+        inset 2px 2px 0 #f0f4ef,
+        inset -4px -4px 0 gray;
+    display: flex;
+}
+
+.btn {
+    border-radius: none;
+    border: none;
+    background-color: #D0CCC0;
+    box-shadow: inset -2px -2px 0 black,
+        inset 2px 2px 0 #f0f4ef,
+        inset -4px -4px 0 gray;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.btn:active, .btn-active{
+    font-weight: 900;
+    box-shadow: inset -2px -2px 0 #f0f4ef,
+        inset 2px 2px 0 black,
+        inset -4px -4px 0 #dedede,
+        inset 4px 4px 0 #c3c3c3;
+    background-color: white;
+    background-image: repeating-linear-gradient(45deg, #c3c3c3 25%,
+            transparent 25%, transparent 75%,
+            #c3c3c3 75%,
+            #c3c3c3),
+        repeating-linear-gradient(45deg,
+            #c3c3c3 25%,
+            white 25%,
+            white 75%,
+            #c3c3c3 75%,
+            #c3c3c3);
+    background-position: 0 0, 3px 3px;
+    background-size: 2px 2px
+}
+
+.opened-windows {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.task {
+    width: 200px;
+    justify-content: start;
+}
+
+.time {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+}
+
+.time-box {
+    box-shadow: inset -2px -2px 0 #f0f4ef,
+        inset 2px 2px 0 gray,
+        inset -4px -4px 0 #c3c3c3;
+    display: flex;
+    padding: 0 10px;
+    margin: 5px;
+    gap: 5px;
+    justify-content: end;
+    align-items: center;
+}
+
+.taskbar img {
+    box-shadow: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
