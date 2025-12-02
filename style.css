@@ -98,3 +98,39 @@
     height: 20px;
     margin-right: 5px;
 }
+
+.desktop {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 100px;
+    padding: auto;
+}
+
+.desktop-icon {
+    height: 90px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    color: white;
+}
+
+.desktop-icon-image {
+    height: 40px;
+    width: 40px;
+}
+
+.desktop-icon-name {
+    margin: 5px;
+    padding: 2px;
+    border: 1px dashed transparent;
+    text-align: center;
+}
+
+.desktop-icon:active .desktop-icon-name{
+    background-color: #002060;
+    border-color: #f0f4ef;
+}
