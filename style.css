@@ -130,7 +130,7 @@
     text-align: center;
 }
 
-.desktop-icon:active .desktop-icon-name{
+.desktop-icon:active .desktop-icon-name, .desktop-icon-active{
     background-color: #002060;
     border-color: #f0f4ef;
 }
