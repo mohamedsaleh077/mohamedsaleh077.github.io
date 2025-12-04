@@ -1,11 +1,17 @@
 @import url('https://fonts.cdnfonts.com/css/w95fa');
 @import "https://cdn.jsdelivr.net/npm/95css@latest/css/95css.min.css";
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: w95fa;
+
+    scrollbar-width: none
 }
 
 .screen {
@@ -156,7 +162,7 @@
     padding: var(--spacing-3);
 }
 
-.dialog-body{
+.dialog-body {
     max-height: 78dvh;
     overflow: scroll;
 }
@@ -186,13 +192,13 @@
         overflow-x: scroll;
     }
 
-    .window{
+    .window {
         left: 5px;
         top: 70px;
         right: 5px;
     }
 
-    .slot{
+    .slot {
         flex-direction: column;
         align-items: center;
     }
