@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/w95fa');
+@import "https://cdn.jsdelivr.net/npm/95css@latest/css/95css.min.css";
 
 * {
     margin: 0;
@@ -7,10 +8,11 @@
     font-family: w95fa;
 }
 
-.container {
+.screen {
     display: flex;
     flex-direction: column;
 
+    position: relative;
 }
 
 .desktop {
@@ -42,7 +44,8 @@
     cursor: pointer;
 }
 
-.btn:active, .btn-active{
+.btn:active,
+.btn-active {
     font-weight: 900;
     box-shadow: inset -2px -2px 0 #f0f4ef,
         inset 2px 2px 0 black,
@@ -70,7 +73,7 @@
 }
 
 .task {
-    width: 200px;
+    min-width: 200px;
     justify-content: start;
 }
 
@@ -78,6 +81,8 @@
     display: flex;
     flex-grow: 1;
     justify-content: end;
+
+    width: 25%;
 }
 
 .time-box {
@@ -100,10 +105,9 @@
 }
 
 .desktop {
-    display: grid;
-    grid-template-columns: 100px;
-    grid-template-rows: 100px;
-    padding: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .desktop-icon {
@@ -130,7 +134,43 @@
     text-align: center;
 }
 
-.desktop-icon:active .desktop-icon-name, .desktop-icon-active{
+.desktop-icon:active .desktop-icon-name,
+.desktop-icon-active {
     background-color: #002060;
     border-color: #f0f4ef;
+}
+
+.window {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+
+    background-color: var(--color-gray-200);
+    border: none;
+    box-shadow: var(--shadow-outer-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    min-width: 320px;
+    padding: var(--spacing-3);
+}
+
+.window-buttons button {
+    padding: 2px;
+    width: 27px;
+    height: 27px;
+
+    font-weight: 900;
+}
+
+@media (max-width: 800px) {
+    .opened-windows {
+        width: 50%;
+        overflow-x: scroll;
+    }
+
+    .window{
+        left: 5px;
+        top: 70px;
+    }
 }
