@@ -17,7 +17,7 @@
                 <img class="desktop-icon-image" src="./imgs/aboutme.ico" alt="">
                 <p class="desktop-icon-name">About Me</p>
             </div>
-            <div class="desktop-icon">
+            <div class="desktop-icon" id="myprojects-icon">
                 <img class="desktop-icon-image" src="./imgs/This_PC_2000.webp" alt="">
                 <p class="desktop-icon-name">My Projects</p>
             </div>
@@ -43,6 +43,8 @@
             </div>
         </div>
 
+
+        <!-- ABOUT ME WINDOW -->
         <div class="window" id="aboutme" style="display: none;">
             <div class="dialog-header">
                 <p>About Me</p>
@@ -51,10 +53,11 @@
                     <button id="close-aboutme">x</button>
                 </div>
             </div>
+
             <div class="dialog-body">
                 <div class="slot">
                     <img src="./imgs/pfp.png" class="pfp">
-                    <p>
+                    <p class="white-bg">
                         I am Mohammed Saleh, An ambius young Egyptian, I am in love with Computer Science and
                         Photography,
                         student at the faculty of Science, Damenhour Univeristy. Aiming to be a Full-Stack Web Developer
@@ -65,8 +68,37 @@
                     </p>
                 </div>
                 <div class="btn-group window-menu">
-                    <button>Okay!</button>
+                    <button id="aboutme-okay">Okay!</button>
                 </div>
+            </div>
+        </div>
+
+        <!-- MY PROJECTS WINDOW -->
+        <div class="window" id="myprojects" style="display: none; top:7%; left:7%">
+            <div class="dialog-header">
+                <p>MY Projects</p>
+                <div class="btn-group window-buttons">
+                    <button id="mini-myprojects">_</button>
+                    <button id="close-myprojects">x</button>
+                </div>
+            </div>
+            <h2>ALL MY PROJECTS</h2>
+            <div class="dialog-body">
+                <br>
+                <div id="projects">
+                    <div id="project" class="white-bg">
+                    </div>
+                    <div id="loading">
+                        <label>Loading...</label>
+                        <progress class="progress-bar" value="0.0"></progress>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="btn-group window-menu">
+                <a href="https://github.com/mohamedsaleh077" target="_blank"><button id="">Visit My
+                        GitHub</button></a>
+                <button id="myprojecst-okay">Okay!</button>
             </div>
         </div>
 
@@ -79,6 +111,10 @@
                 <button class="btn task" id="aboutme-task" style="display: none;">
                     <img src="./imgs/aboutme.ico" alt="">
                     <p>About Me</p>
+                </button>
+                <button class="btn task" id="myprojects-task" style="display: none;">
+                    <img src="./imgs/projects.ico" alt="">
+                    <p>My Projecst</p>
                 </button>
             </div>
             <div class="time">

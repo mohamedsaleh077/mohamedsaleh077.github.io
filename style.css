@@ -170,12 +170,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-3);
-    min-width: 320px;
+    min-width: 250px;
     padding: var(--spacing-3);
-}
-
-.window-menu {
-
 }
 
 .dialog-body {
@@ -185,6 +181,18 @@ body {
 
 .slot {
     display: flex;
+    align-items: center;
+}
+
+.white-bg{
+    background-color: var(--color-white);
+    padding: 10px;
+    box-shadow: var(--shadow-inner-3);
+    width: 100%;
+}
+
+.window-menu {
+    text-align: right;
 }
 
 .pfp {
@@ -200,6 +208,11 @@ body {
     height: 27px;
 
     font-weight: 900;
+}
+
+#project {
+    max-height: 60dvh;
+    overflow: scroll;
 }
 
 @media (max-width: 800px) {
