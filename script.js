@@ -32,6 +32,8 @@ function getGitHubRepos() {
 }
 
 $(document).ready(function () {
+    $("#login").get(0).play();
+
     setInterval(updateTime, 50000);
 
     // about me section
@@ -115,5 +117,7 @@ $(document).ready(function () {
         $("#social").toggle();
     });
 
-    $("#login").get(0).play();
+    $("#start").click(function () {
+        $("#login").get(0).play();
+    });
 });
