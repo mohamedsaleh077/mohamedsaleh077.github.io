@@ -89,12 +89,21 @@ $(document).ready(function () {
         $("#MyExperinces").toggle();
     });
 
-     // MyCertificates section
+    // MyCertificates section
     $("#MyCertificates-icon, #MyCertificates-okay, #close-MyCertificates").click(function () {
         toggle_window("#MyCertificates");
     });
 
     $("#mini-MyCertificates, #MyCertificates-task").click(function () {
         $("#MyCertificates").toggle();
-    });   
+    });
+
+    // my skills section
+    $("#skills-icon, #skills-okay, #close-skills").click(function () {
+        toggle_window("#skills");
+    });
+
+    $("#mini-skills, #skills-task").click(function () {
+        $("#skills").toggle();
+    });
 });

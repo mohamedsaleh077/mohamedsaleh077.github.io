@@ -29,7 +29,7 @@
                 <img class="desktop-icon-image" src="./imgs/certicates.ico" alt="">
                 <p class="desktop-icon-name">My Certificates</p>
             </div>
-            <div class="desktop-icon">
+            <div class="desktop-icon" id="skills-icon">
                 <img class="desktop-icon-image" src="./imgs/skills.ico" alt="">
                 <p class="desktop-icon-name">My Skills</p>
             </div>
@@ -113,12 +113,12 @@
             </div>
             <h2>I have no Experinces :)</h2>
             <div class="btn-group window-menu">
-                <button id="MyExperinces-okay">I.D.C!</button>
+                <button id="MyExperinces-okay">okay ...</button>
             </div>
         </div>
 
         <!--MyCertificates WINDOW -->
-        <div class="window" id="MyCertificates" style="display: none; top:14%; left:4%">
+        <div class="window" id="MyCertificates" style="display: none; top:17%; left:1%">
             <div class="dialog-header">
                 <p>MY Projects</p>
                 <div class="btn-group window-buttons">
@@ -128,8 +128,55 @@
             </div>
             <h2>Just Go to my Featured section on my linkedin</h2>
             <div class="btn-group window-menu">
-                <a href="https://www.linkedin.com/in/mohammed-saleh777/" target="_blank"><button id="">Take me to your LinkedIn</button></a>
+                <a href="https://www.linkedin.com/in/mohammed-saleh777/" target="_blank"><button id="">Take me to your
+                        LinkedIn</button></a>
                 <button id="MyCertificates-okay">Okay!</button>
+            </div>
+        </div>
+
+        <!-- MY skills WINDOW -->
+        <div class="window" id="skills" style="display: none; top:20%; left:2%">
+            <div class="dialog-header">
+                <p>My Skills</p>
+                <div class="btn-group window-buttons">
+                    <button id="mini-skills">_</button>
+                    <button id="close-skills">x</button>
+                </div>
+            </div>
+            <h2>here, what I can do!</h2>
+            <div class="input-group">
+                <label for="select">My Skills</label>
+                <select name="select" id="select" multiple="">
+                    <option value="" disabled>-- Front End Web Development --</option>
+                    <option value="">HTML</option>
+                    <option value="">CSS</option>
+                    <option value="">Java Script</option>
+                    <option value="">JQuery</option>
+                    <option value="">BootStrap</option>
+                    <option value="">Tailwind ... soon</option>
+                    <option value="" disabled>-- Back End Web Development --</option>
+                    <option value="">PHP</option>
+                    <option value="">MySQL</option>
+                    <option disabled>-- Other Skills --</option>
+                    <option value="">Git</option>
+                    <option value="">GitHub</option>
+                    <option value="">Docker</option>
+                    <option value="">Linux</option>
+                    <option value="">Office</option>
+                    <option value="">Windows</option>
+                    <option value="">Operating Systems</option>
+                    <option value="" disabled>-- other programming languages</option>
+                    <option value="">Python</option>
+                    <option value="">C</option>
+                    <option value="">C++</option>
+                    <option value="">A bit about Assembly</option>
+                    <option value="">Bash</option>
+                </select>
+            </div>
+            <div class="btn-group window-menu">
+                <a href="https://www.linkedin.com/in/mohammed-saleh777/" target="_blank"><button id="">Take me to your
+                        LinkedIn</button></a>
+                <button id="skills-okay">I.D.C!</button>
             </div>
         </div>
 
@@ -150,11 +197,15 @@
                 </button>
                 <button class="btn task" id="MyExperinces-task" style="display: none;">
                     <img src="./imgs/experince.ico" alt="">
-                    <p>My Projecst</p>
+                    <p>My Experinces</p>
                 </button>
                 <button class="btn task" id="MyCertificates-task" style="display: none;">
                     <img src="./imgs/certicates.ico" alt="">
-                    <p>My Projecst</p>
+                    <p>My Certificates</p>
+                </button>
+                <button class="btn task" id="skills-task" style="display: none;">
+                    <img src="./imgs/skills.ico" alt="">
+                    <p>My skills</p>
                 </button>
             </div>
             <div class="time">
