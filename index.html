@@ -21,7 +21,7 @@
                 <img class="desktop-icon-image" src="./imgs/This_PC_2000.webp" alt="">
                 <p class="desktop-icon-name">My Projects</p>
             </div>
-            <div class="desktop-icon">
+            <div class="desktop-icon" id="MyExperinces-icon">
                 <img class="desktop-icon-image" src="./imgs/experince.ico" alt="">
                 <p class="desktop-icon-name">My Experinces</p>
             </div>
@@ -102,6 +102,21 @@
             </div>
         </div>
 
+        <!-- MY Experinces WINDOW -->
+        <div class="window" id="MyExperinces" style="display: none; top:14%; left:4%">
+            <div class="dialog-header">
+                <p>MY Projects</p>
+                <div class="btn-group window-buttons">
+                    <button id="mini-MyExperinces">_</button>
+                    <button id="close-MyExperinces">x</button>
+                </div>
+            </div>
+            <h2>I have no Experinces :)</h2>
+            <div class="btn-group window-menu">
+                <button id="MyExperinces-okay">Okay!</button>
+            </div>
+        </div>
+
         <div class="taskbar">
             <button class="btn">
                 <img src="./imgs/start.png" alt="">
@@ -114,6 +129,10 @@
                 </button>
                 <button class="btn task" id="myprojects-task" style="display: none;">
                     <img src="./imgs/projects.ico" alt="">
+                    <p>My Projecst</p>
+                </button>
+                <button class="btn task" id="MyExperinces-task" style="display: none;">
+                    <img src="./imgs/experince.ico" alt="">
                     <p>My Projecst</p>
                 </button>
             </div>

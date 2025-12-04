@@ -80,5 +80,12 @@ $(document).ready(function () {
         $("#myprojects").toggle();
     });
 
+    // about me section
+    $("#MyExperinces-icon, #MyExperinces-okay, #close-MyExperinces").click(function () {
+        toggle_window("#MyExperinces");
+    });
 
+    $("#mini-MyExperinces, #MyExperinces-task").click(function () {
+        $("#MyExperinces").toggle();
+    });
 });
