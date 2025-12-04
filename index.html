@@ -13,12 +13,12 @@
 <body>
     <div class="screen">
         <div class="desktop">
-            <div class="desktop-icon">
+            <div class="desktop-icon" id="aboutme-icon">
                 <img class="desktop-icon-image" src="./imgs/aboutme.ico" alt="">
                 <p class="desktop-icon-name">About Me</p>
             </div>
             <div class="desktop-icon">
-                <img class="desktop-icon-image" src="./imgs/projects.ico" alt="">
+                <img class="desktop-icon-image" src="./imgs/This_PC_2000.webp" alt="">
                 <p class="desktop-icon-name">My Projects</p>
             </div>
             <div class="desktop-icon">
@@ -43,17 +43,23 @@
             </div>
         </div>
 
-        <div class="window">
+        <div class="window" id="aboutme">
             <div class="dialog-header">
                 <p>About Me</p>
                 <div class="btn-group window-buttons">
-                    <button>_</button>
-                    <button>x</button>
+                    <button id="mini-aboutme">_</button>
+                    <button id="close-aboutme">x</button>
                 </div>
             </div>
             <div class="dialog-body">
                 <div class="slot">
-                    <p>This is a window</p>
+                    <img src="./imgs/pfp.png" class="pfp">
+                    <p>
+                        I am Mohammed Saleh, An ambius young Egyptian, I am in love with Computer Science and Photography,
+                        student at the faculty of Science, Damenhour Univeristy. Aiming to be a Full-Stack Web Developer with 
+                        PHP and MySQL, Contributed in OpenSource, was playing around with OSes and Moding for devices, Team Leader
+                        for Code-Hatsu Team who was the forth team on Egypt in Digitopia 2025.
+                    </p>
                 </div>
             </div>
         </div>
@@ -64,13 +70,9 @@
                 <p>Start</p>
             </button>
             <div class="opened-windows">
-                <button class="btn task">
-                    <img src="./imgs/This_PC_2000.webp" alt="">
-                    <p>My Computer</p>
-                </button>
-                <button class="btn task btn-active">
-                    <img src="./imgs/This_PC_2000.webp" alt="">
-                    <p>My Computer</p>
+                <button class="btn task" id="aboutme-task">
+                    <img src="./imgs/aboutme.ico" alt="">
+                    <p>About Me</p>
                 </button>
             </div>
             <div class="time">

@@ -11,9 +11,38 @@ function updateTime() {
     $("#time").text(time);
 }
 
+function toggle_window(id) {
+    $(id).toggle();
+    $(id + '-task').toggle();
+}
+
+function mini_window(id) {
+    $(id).toggle();
+}
+
 updateTime();
 
 
 $(document).ready(function () {
     setInterval(updateTime, 50000);
+
+    // about me section
+    $("#aboutme").hide();
+    $("#aboutme-task").hide();
+
+    $("#aboutme-icon").click(function () {
+        toggle_window("#aboutme")
+    })
+
+    $("#close-aboutme").click(function () {
+        toggle_window("#aboutme")
+    })
+
+    $("#mini-aboutme").click(function () {
+        mini_window("#aboutme")
+    })
+
+    $("#aboutme-task").click(function () {
+        mini_window("#aboutme")
+    })
 });
