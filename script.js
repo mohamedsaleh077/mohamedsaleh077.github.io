@@ -106,4 +106,11 @@ $(document).ready(function () {
     $("#mini-skills, #skills-task").click(function () {
         $("#skills").toggle();
     });
-});
+    // my social section
+    $("#social-icon, #social-okay, #close-social").click(function () {
+        toggle_window("#social");
+    });
+
+    $("#mini-social, #social-task").click(function () {
+        $("#social").toggle();
+    });});

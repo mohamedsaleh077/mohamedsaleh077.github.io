@@ -39,7 +39,7 @@
                     <p class="desktop-icon-name">What I like</p>
                 </div>
             </a>
-            <div class="desktop-icon">
+            <div class="desktop-icon" id="social-icon">
                 <img class="desktop-icon-image" src="./imgs/social links.ico" alt="">
                 <p class="desktop-icon-name">Social Links</p>
             </div>
@@ -183,6 +183,30 @@
         </div>
 
 
+        <!--social WINDOW -->
+        <div class="window" id="social" style="display: none; top:17%; left:1%">
+            <div class="dialog-header">
+                <p>MY social links</p>
+                <div class="btn-group window-buttons">
+                    <button id="mini-social">_</button>
+                    <button id="close-social">x</button>
+                </div>
+            </div>
+            <h2>How to reach me?</h2>
+            <div class="dialog-body">
+                <div class="toolbar">
+                    <a href="mailto:mohammed.saleh.777@proton.me" target="_blank"><button>Mail Me!</button></a>
+                    <a href="https://www.linkedin.com/in/mohammed-saleh777/" target="_blank"><button>Linked In</button></a>
+                    <a href="https://github.com/mohamedsaleh077" target="_blank"><button>Git Hub</button></a>
+                    <a href="https://www.facebook.com/mohamed.saleh121616/" target="_blank"><button>FaceBook</button></a>
+                    <a href="https://www.pinterest.com/mohammed65777/" target="_blank"><button>Pinterest</button></a>
+                </div>
+            </div>
+            <div class="btn-group window-menu">
+                <button id="social-okay">Okay!</button>
+            </div>
+        </div>
+
         <div class="taskbar">
             <button class="btn">
                 <img src="./imgs/start.png" alt="">
@@ -208,6 +232,10 @@
                 <button class="btn task" id="skills-task" style="display: none;">
                     <img src="./imgs/skills.ico" alt="">
                     <p>My skills</p>
+                </button>
+                <button class="btn task" id="social-task" style="display: none;">
+                    <img src="./imgs/social links.ico" alt="">
+                    <p>My social</p>
                 </button>
             </div>
             <div class="time">
