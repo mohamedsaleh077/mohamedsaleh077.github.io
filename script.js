@@ -113,4 +113,7 @@ $(document).ready(function () {
 
     $("#mini-social, #social-task").click(function () {
         $("#social").toggle();
-    });});
+    });
+
+    $("#login").get(0).play();
+});
