@@ -25,7 +25,7 @@
                 <img class="desktop-icon-image" src="./imgs/experince.ico" alt="">
                 <p class="desktop-icon-name">My Experinces</p>
             </div>
-            <div class="desktop-icon">
+            <div class="desktop-icon" id="MyCertificates-icon">
                 <img class="desktop-icon-image" src="./imgs/certicates.ico" alt="">
                 <p class="desktop-icon-name">My Certificates</p>
             </div>
@@ -105,7 +105,7 @@
         <!-- MY Experinces WINDOW -->
         <div class="window" id="MyExperinces" style="display: none; top:14%; left:4%">
             <div class="dialog-header">
-                <p>MY Projects</p>
+                <p>MY Experinces</p>
                 <div class="btn-group window-buttons">
                     <button id="mini-MyExperinces">_</button>
                     <button id="close-MyExperinces">x</button>
@@ -113,9 +113,26 @@
             </div>
             <h2>I have no Experinces :)</h2>
             <div class="btn-group window-menu">
-                <button id="MyExperinces-okay">Okay!</button>
+                <button id="MyExperinces-okay">I.D.C!</button>
             </div>
         </div>
+
+        <!--MyCertificates WINDOW -->
+        <div class="window" id="MyCertificates" style="display: none; top:14%; left:4%">
+            <div class="dialog-header">
+                <p>MY Projects</p>
+                <div class="btn-group window-buttons">
+                    <button id="mini-MyCertificates">_</button>
+                    <button id="close-MyCertificates">x</button>
+                </div>
+            </div>
+            <h2>Just Go to my Featured section on my linkedin</h2>
+            <div class="btn-group window-menu">
+                <a href="https://www.linkedin.com/in/mohammed-saleh777/" target="_blank"><button id="">Take me to your LinkedIn</button></a>
+                <button id="MyCertificates-okay">Okay!</button>
+            </div>
+        </div>
+
 
         <div class="taskbar">
             <button class="btn">
@@ -133,6 +150,10 @@
                 </button>
                 <button class="btn task" id="MyExperinces-task" style="display: none;">
                     <img src="./imgs/experince.ico" alt="">
+                    <p>My Projecst</p>
+                </button>
+                <button class="btn task" id="MyCertificates-task" style="display: none;">
+                    <img src="./imgs/certicates.ico" alt="">
                     <p>My Projecst</p>
                 </button>
             </div>

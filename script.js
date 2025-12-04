@@ -80,7 +80,7 @@ $(document).ready(function () {
         $("#myprojects").toggle();
     });
 
-    // about me section
+    // my experinces section
     $("#MyExperinces-icon, #MyExperinces-okay, #close-MyExperinces").click(function () {
         toggle_window("#MyExperinces");
     });
@@ -88,4 +88,13 @@ $(document).ready(function () {
     $("#mini-MyExperinces, #MyExperinces-task").click(function () {
         $("#MyExperinces").toggle();
     });
+
+     // MyCertificates section
+    $("#MyCertificates-icon, #MyCertificates-okay, #close-MyCertificates").click(function () {
+        toggle_window("#MyCertificates");
+    });
+
+    $("#mini-MyCertificates, #MyCertificates-task").click(function () {
+        $("#MyCertificates").toggle();
+    });   
 });
